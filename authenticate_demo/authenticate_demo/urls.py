@@ -19,5 +19,7 @@ from django.contrib import admin
 from front import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+    path('', views.index),
+    path('proxy/', views.proxy_view),
+    path('one/', views.one_view),
 ]
